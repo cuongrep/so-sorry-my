@@ -29,15 +29,42 @@
     <embed src="https://vnso-zn-24-tf-mp3-s1-zmp3.zmdcdn.me/acb71aa080e069be30f1/3493836006116538237?authen=exp=1692381494~acl=/acb71aa080e069be30f1/*~hmac=ea41e9e51990f90860fa2417920a8e2a&fs=MTY5MjIwODY5NDQxMXx3ZWJWNnwwfDExNi45Ny41My41NA" loop="true" autostart="true" width="0"
          height="0">
     <div style="display: flex;justify-content: center; font-size: 50px; color:#ea80b0" strong>
-      <span id="text"></span>
+      <!-- typing.js -->
+      <!-- <span id="text"></span> -->
+
+      <!-- Element to contain animated typing from https://github.com/mattboldt/typed.js -->
+      <span id="element"></span>
     </div>
     <canvas id="pinkboard"></canvas>
-    <script type="text/javascript" src="typing.js"></script>
+
+    <!-- Load library from the CDN -->
+   
+    <!-- <script type="text/javascript" src="typing.js"></script>
     <script>
       var typing=Typing("Gửi My!*Gửi My!* Anh biết bây giờ em ghét anh nhiều lắm.!*Anh biết bây giờ em ghét anh nhiều lắm.!* Lần trước em có nói rằng, nếu có vấn đề hãy nói ra để đối phương hiểu suy nghĩ và cùng nhau giải quyết, không được bỏ qua.!*Lần trước em có nói rằng, nếu có vấn đề hãy nói ra để đối phương hiểu suy nghĩ và cùng nhau giải quyết, không được bỏ qua.!* Anh cảm thấy rất ân hận vì mình đã đối xử chưa tốt với em.!*Anh cảm thấy rất ân hận vì mình đã đối xử chưa tốt với em.!* Mong rằng em có thể cho anh 1 cơ hội để làm lại, để thể hiện tình cảm, bù đắp những lỗi lầm, những lúc anh vô tâm, để em chịu cảm giác thiệt thòi.!*Mong rằng em có thể cho anh 1 cơ hội để làm lại, để thể hiện tình cảm, bù đắp những lỗi lầm, những lúc anh vô tâm, để em chịu cảm giác thiệt thòi.!* Nhớ lần, xem phim Nguyên tố, em gợi ý mình bắt đầu lại từ đầu.!*Nhớ lần, xem phim Nguyên tố, em gợi ý mình bắt đầu lại từ đầu.!* Mình bắt đầu lại từ đầu em nhé.!*Mình bắt đầu lại từ đầu em nhé.!* Thật lòng anh rất thương em, rất nhớ em, My à! 💖");
 
       typing();
-  </script>
+    </script> -->
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+      <script>
+        var typed = new Typed('#element', {
+          strings: [
+            'Gửi My!',
+            'Anh biết bây giờ em ghét anh nhiều lắm.',
+            'Lần trước, em có nói rằng, nếu có vấn đề hãy nói ra để đối phương hiểu suy nghĩ và cùng nhau giải quyết, không được bỏ qua.',
+            'Anh cảm thấy rất ân hận vì mình đã đối xử chưa tốt với em.',
+            'Mong rằng em có thể cho anh 1 cơ hội để làm lại, để thể hiện tình cảm, bù đắp những lỗi lầm, những lúc anh vô tâm, để em chịu cảm giác thiệt thòi.',
+            'Nhớ lần, xem phim Nguyên tố, em gợi ý mình bắt đầu lại từ đầu.',
+            'Mình bắt đầu lại từ đầu em nhé!',
+            'Thật lòng anh rất thương em, rất nhớ em, My à! 💖'
+          ],
+          typeSpeed: 50,
+          backSpeed: 0,
+          fadeOut: true
+        });
+      </script>
     <script>
       /*
       * Settings
